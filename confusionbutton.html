@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>If All/Are All Generator</title>
+    <meta name="keywords" content="If, all, random, generator, Jaden, Smith, tweets">
+    <meta name="description" content="Random if all/are all; like Jaden Smith's tweets.">
+    <meta name="author" content="TheSheepGuy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        html{
+            background-color: orange;
+        }
+        p{
+            margin-top: 0;
+            color: black;
+            font-family: "Impact", "Arial", sans-serif;
+            text-align: center;
+            font-size: 8em;
+        }
+        p.credits{
+            font-family: "Trebuchet MS", "Arial", sans-serif;
+            font-size: 0.5em;
+            margin-top: 1em;
+        }
+        a{
+            color: black;
+        }
+        h1, h2{
+            color: black;
+            font-family: "Trebuchet MS", "Arial", sans-serif;
+            text-align: center;
+        }
+        h1{font-size: 2.5em;}
+        h2{font-size: 2em;}
+        button{
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    
+    <script>
+        function generate(){
+            var words = ["times",
+                         "people",
+                         "work",
+                         "histories",
+                         "arts",
+                         "loves",
+                         "worlds",
+                         "informations",
+                         "maps",
+                         "twos",
+                         "families",
+                         "governments",
+                         "health",
+                         "systems",
+                         "computers",
+                         "meats",
+                         "years",
+                         "music",
+                         "persons",
+                         "methods",
+                         "data",
+                         "foods",
+                         "understandings",
+                         "theories",
+                         "laws",
+                         "birds",
+                         "literatures",
+                         "problems",
+                         "knowledges",
+                         "powers",
+                         "abilities",
+                         "internets",
+                         "televisions",
+                         "sciences",
+                         "libraries",
+                         "natures",
+                         "ovens",
+                         "gardens",
+                         "videos",
+                         "girlfirends",
+                         "boyfriends",
+                         "cities",
+                         "viruses",
+                         "girls",
+                         "boys",
+                         "films",
+                         "waters",
+                         "money",
+                         "examples",
+                         "businesses",
+                         "studies",
+                         "games",
+                         "lifes",
+                         "days",
+                         "numbers",
+                         "fields",
+                         "fish",
+                         "schools",
+                         "tests",
+                         "trees",
+                         "grass",
+                         "houses",
+                         "classes",
+                         "cash",
+                         "mice",
+                         "taxes",
+                         "gifts",
+                         "gases",
+                         "feet",
+                         "meats",
+                         "salamies",
+                         "hams",
+                         "jams",
+                         "cheeses",
+                         "butters",
+                         "colas",
+                         "drinks",
+                         "edges",
+                         "sparkling waters",
+                         "windows",
+                         "glasses",
+                         "cars",
+                         "hotels",
+                         "soups",
+                         "pizzas",
+                         "burgers",
+                         "pans",
+                         "stoves",
+                         "screens",
+                         "Trumps",
+                         "sweetes",
+                         "wars",
+                         "jobs",
+                         "weathers",
+                         "plantes",
+                         "stars",
+                         "space",
+                         "animals",
+                         "tents"
+                        ];
+            var randomNo = Math.floor(Math.random() * 95);
+            var randomNo2 = Math.floor(Math.random() * 95);
+            console.log(randomNo);
+            var word1 = words[randomNo];
+            var word2 = words[randomNo2];
+            console.log(randomNo2);
+            
+            output = document.getElementById("output");
+            output.innerHTML = "If all " + word1 + " are " + word2 + ";<br />Are all " + word2 + " " + word1 + "?";
+            
+            console.log("Test");
+        }
+    </script>
+</head>
+<body>
+    <h1>The Confusion Button</h1>
+    <h2>Featuring over 10000 different possibilities!</h2>
+    <p id="output"></p>
+    <button type="button" onclick="generate()">Generate!</button>
+    <p class="credits">Made by TheSheepGuy, Twitter: <a href="https://twitter.com/thesheepguy">@thesheepguy1</a>.</p>
+</body>
+</html>
