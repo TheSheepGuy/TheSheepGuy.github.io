@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /forgs.html
+Disallow: randompages/forgs.html
