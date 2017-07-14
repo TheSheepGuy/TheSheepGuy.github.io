@@ -11,6 +11,10 @@ h1{
     text-align: center;
     margin: 0;
     padding-top: 0.5em;
+    font-size: 3em;
+}
+h2{
+    font-size: 1.5em;
 }
 p{
     text-align: justify;
@@ -24,10 +28,10 @@ div.content{
     background-color: #ea6;
     border: 5px solid #ff8c1a;
 }
-#small{
+.evenSmaller{
     font-size: 0.5em;
 }
-#sM{
+.small{
     font-size: 0.8em;
 }
 
