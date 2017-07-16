@@ -104,8 +104,60 @@ function pathetique3Control(task){
         piece.play();
     }
 }
+function facile3Control(task){
+    var piece = document.getElementById("facile3")
+    
+    if(task == "a1"){
+        piece.currentTime = 0;
+        piece.play();
+    }
+    else if(task == "b"){
+        piece.currentTime = 17;
+        piece.play();
+    }
+    else if(task == "a2"){
+        piece.currentTime = 29.5;
+        piece.play();
+    }
+    else if(task == "c"){
+        piece.currentTime = 38.25;
+        piece.play();
+    }
+    else if(task == "a3"){
+        piece.currentTime = 64;
+        piece.play();
+    }
+    else if(task == "coda"){
+        piece.currentTime = 72.5;
+        piece.play();
+    }
+}
 
 //Sonata Rondo Form:
+function sonata27Control(task){
+    var piece = document.getElementById("sonata27")
+    
+    if(task == "expo1"){
+        piece.currentTime = 0;
+        piece.play();
+    }
+    else if(task == "expo2"){
+        piece.currentTime = 65;
+        piece.play();
+    }
+    else if(task == "develop1"){
+        piece.currentTime = 114;
+        piece.play();
+    }
+    else if(task == "develop2"){
+        piece.currentTime = 154;
+        piece.play();
+    }
+    else if(task == "recap1"){
+        piece.currentTime = 380;
+        piece.play();
+    }
+}
 function tempestControl(task){
     var piece = document.getElementById("tempest");
     
@@ -207,6 +259,96 @@ function tristesseControl(task){
     }
     else if(task == "a2"){
         piece.currentTime = 201; // = 3 min 21 s
+        piece.play();
+    }
+}
+function torrentControl(task){
+    var piece = document.getElementById("torrent")
+    
+    if(task == "a1"){
+        piece.currentTime = 0;
+        piece.play();
+    }
+    else if(task == "b"){
+        piece.currentTime = 60;
+        piece.play();
+    }
+    else if(task == "a2"){
+        piece.currentTime = 77.25;
+        piece.play();
+    }
+}
+function funeral3Control(task){
+    var piece = document.getElementById("funeral3");
+    
+    if(task == "a1"){
+        piece.currentTime = 0;
+        piece.play();
+    }
+    else if(task == "b"){
+        piece.currentTime = 152;
+        piece.play();
+    }
+    else if(task == "a2"){
+        piece.currentTime = 433;
+        piece.play();
+    }
+}
+
+//Rag:
+function mapleControl(task){
+    var piece = document.getElementById("maple");
+    
+    if(task == "a1"){
+        piece.currentTime = 0;
+        piece.play();
+    }
+    else if(task == "b"){
+        piece.currentTime = 41.5;
+        piece.play();
+    }
+    else if(task == "a2"){
+        piece.currentTime = 82.5;
+        piece.play();
+    }
+    else if(task == "c"){
+        piece.currentTime = 103;
+        piece.play();
+    }
+    else if(task == "d"){
+        piece.currentTime = 143;
+        piece.play();
+    }
+}
+function entertainerControl(task){
+    var piece = document.getElementById("entertainer")
+    
+    if(task == "intro"){
+        piece.currentTime = 0;
+        piece.play();
+    }
+    else if(task == "a1"){
+        piece.currentTime = 9;
+        piece.play();
+    }
+    else if(task == "b"){
+        piece.currentTime = 60.25;
+        piece.play();
+    }
+    else if(task == "a2"){
+        piece.currentTime = 108;
+        piece.play();
+    }
+    else if(task == "c"){
+        piece.currentTime = 133.75;
+        piece.play();
+    }
+    else if(task == "codetta"){
+        piece.currentTime = 179.5;
+        piece.play();
+    }
+    else if(task == "d"){
+        piece.currentTime = 186;
         piece.play();
     }
 }
