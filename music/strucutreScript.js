@@ -22,8 +22,8 @@ function pathetiqueControl(task){
         piece.play();
     }
 }
-function funeralControl(task){
-    var piece = document.getElementById("funeral");
+function funeral1Control(task){
+    var piece = document.getElementById("funeral1");
     
     if(task == "expo1"){
         piece.currentTime = 0;
