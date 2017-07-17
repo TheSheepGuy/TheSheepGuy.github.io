@@ -1,11 +1,11 @@
 *{
-    color: #000;
+    color: #ddd;
     font-family: "Trebuchet MS", sans-serif;
 }
 html, body{
     margin: 0;
     padding 0;
-    background-color: #105;
+    background-color: #000;
 }
 h1{
     text-align: center;
@@ -25,8 +25,8 @@ a:hover{
 div.content{
     width: 80%;
     margin: 0 auto;
-    background-color: #ea6;
-    border: 5px solid #ff8c1a;
+    background-color: #333333;
+    border: 5px solid #4323c3;
 }
 .evensmaller{
     font-size: 0.5em;
@@ -38,14 +38,14 @@ div.content{
 /* Navbar */
 div.navbar{
     text-align: center;
-    background-color: #333;
+    background-color: #000;
 }
 ul.navbar{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #000;
     display: inline-block;
     vertical-align: bottom;
 }
@@ -60,7 +60,7 @@ li.navbar a{
     text-decoration: none;
 }
 li.navbar a:hover:not(.active){
-    background-color: #331a00;
+    background-color: #884500;
 }
 a.active {
     background-color: #e67300;
