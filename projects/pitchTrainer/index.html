@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="keywords" content="Perfect, Pitch, Absolute, Trainer, App, Tool, Music, Theory">
+    <meta name="description" content="Tool to train perfect pitch.">
+    <meta name="author" content="TheSheepGuy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <p class="normalText">
+            Wave type:
+            <select id="waveType"> <!-- Change the type of the wave via a drop-down menu -->
+                <option value="sine">Sine</option>
+                <option value="square">Square</option>
+                <option value="triangle">Triangle</option>
+                <option value="sawtooth">Sawtooth</option>
+            </select>
+            Volume: <input id="volumeControl" type="range" name="volumeControl" min="0" max="100" value="20"> <!-- Change the volume via a slider -->
+            Octave:
+            <select id="octave">
+                <option value="3">3</option>
+                <option value="4" selected>4</option>
+                <option value="5">5</option>
+            </select>
+            Time (seconds): <input type="number" step="0.25" name="playTime" id="playTime" value="2">
+        </p>
+        
+        <br />
+        <p id="answer">?</p>
+        
+        <p class="button"><button class="normal" id="randomise" onclick="newRandomNote()">Pick a random note</button>
+        <button class="normal" id="play" onclick="playNote()">Play the note!</button>
+        <button class="normal" onclick="stopPlaying()">Stop playing</button></p>
+        
+        <p class="normalText">
+            What note do you think it is?
+            <select id="guessedNote">
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+            </select>
+            <button class="smallButton" id="submitGuess" onclick="checkGuess()">Guess!</button>
+            <button class="smallButton" id="instructions" onclick="toggleInstructions()">Instructions?</button>
+        </p>
+        <p id="instructionText" style="display: none;">Press the "Pick random note" button to choose a new note, and then press play. Try to guess what the note is by choosing it from the drop-down list, and then submitting your guess by pressing "Guess!". If your guessed note comes up red, you guessed wrong. Don't worry! You can try again until you get it right, when the note will come up green!</p>
+        
+        <p class="small normalText" id="credits">Made by TheSheepGuy, <a href="https://twitter.com/thesheepguy1">Twitter</a>, <a href="https://github.com/TheSheepGuy">GitHub</a>, <a href="../../index.html">back to home</a>.</p>
+    </div>
+</body>
+</html>

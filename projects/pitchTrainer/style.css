@@ -1,0 +1,65 @@
+/*Make the basic color theme:*/
+body{
+    background-color: black;
+}
+*{
+    color: white;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+/*Centre the content*/
+div.content{
+    border: 5px solid indigo;
+    border-radius: 5px;
+    margin: 0 10%;
+}
+
+/*Fonts*/
+.small{
+    font-size: 0.8em;
+}
+p.normalText{
+    text-align: center;
+}
+a:hover{
+    color: hsl(275, 100%, 40%);
+}
+
+/*Forms*/
+select, input{
+    background-color: black;
+    color: white;
+    border-color: indigo;
+}
+
+/*Buttons*/
+button.normal{
+    background-color: indigo;
+    font-size: 1.5em;
+    border: none;
+    padding: 0.25em;
+    border-radius: 0.1em;
+    transition-duration: 0.2s;
+    display: inline-block;
+}
+p.button{
+    text-align: center;
+}
+button.smallButton{
+    background-color: indigo;
+    border: none;
+    padding: 0.25em;
+    border-radius: 0.1em;
+    transition-duration: 0.2s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(275, 100%, 40%);
+}
+
+/*Answer*/
+#answer{
+    color: white;
+    text-align: center;
+    font-size: 5em;
+}
