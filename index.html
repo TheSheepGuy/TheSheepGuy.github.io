@@ -1,39 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
     <title>TheSheepGuy - Home</title>
     <meta name="keywords" content="TheSheepGuy, TheSheepGuy1">
-    <meta name="description" content="Personal site for random projects.">
-    <meta name="author" content="TheSheepGuy">
+    <meta name="description" content="Personal site of TheSheepGuy for my music and projects.">
+    <meta name="author" content='Patrick "TheSheepGuy" Ausel'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styleMain.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styleMain.css"> -->
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <style>
+        /*Load the font 'PT Sans' from Google's font library:*/
+        @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700');
+        
+        html, body {
+            background-color: black;
+            /*Make the document the size of the display:*/
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        
+        div.flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+        }
+        
+        /*Overlays:*/
+        div.leftImage{
+            width: 50%;
+            height: 75%;
+            /*Set up the background:*/
+            background-image: url("images/screenOfCode.jpeg");
+            background-position: 45%;
+        }
+        div.rightImage {
+            width: 50%;
+            height: 75%;
+            /*Set up the background:*/
+            background-image: url("images/musicManuscript.png");
+            background-position: center;
+        }
+        div.bottomImage {
+            width: 100%;
+            height: 25%;
+            background-image: url("images/Question_Mark.svg");
+            background-position: center;
+        }
+        
+        div.left {
+            width: 50%;
+            height: 75%;
+            position: absolute;
+            /*Set up the background:*/
+            background-color: rgba(0, 150, 255, 0.5);
+            /*Transition the colour change, and text shadow change respectively:*/
+            transition: background-color 0.25s ease, text-shadow 0.25s ease;
+        }
+        div.left:hover {
+            background-color: rgba(0, 150, 255, 0.8);
+            /* offset-x | offset-y | blur-radius | color */
+            text-shadow: 5px 5px 10px black;
+        }
+        div.right {
+            width: 50%;
+            height: 75%;
+            position: absolute;
+            /*Set up the background:*/
+            background-color: rgba(204, 0, 0, 0.5);
+            /*Transition the colour change, and text shadow change respectively:*/
+            transition: background-color 0.25s ease, text-shadow 0.25s ease;
+        }
+        div.right:hover {
+            background-color: rgba(204, 0, 0, 0.8);
+            /* offset-x | offset-y | blur-radius | color */
+            text-shadow: 5px 5px 10px black;
+        }
+        div.bottom {
+            width: 100%;
+            height: 25%;
+            position: absolute;
+            background-color: rgba(255, 165, 0, 0.5);
+            transition: background-color 0.25s ease, text-shadow 0.25s ease;
+        }
+        div.bottom:hover {
+            background-color: rgba(255, 165, 0, 0.8);
+            /* offset-x | offset-y | blur-radius | color */
+            text-shadow: 5px 5px 10px black;
+        }
+        
+        /*Text Formatting:*/
+        * {
+            font-family: "PT Sans", sans-serif;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+        }
+        
+        div.tableDiv {
+            /*Emulate the DIV as a table and the H1 as a table cell to vertically align the text:*/
+            display: table;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 5em;
+            
+            /*Emulate the DIV as a table and the H1 as a table cell to vertically align the text:*/
+            display: table-cell;
+            vertical-align: middle;
+        }
+        h1:hover {
+            cursor: pointer;
+        }
+        h2 {
+            font-size: 2.5em;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        h2:hover {
+            cursor: pointer;
+        }
+        div.cellDiv {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        div.cellDiv:hover {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div class="content">
-        <div class="navbar">
-		    <ul class="navbar">
-                <li class="navbar"><a href="index.html" class="active">Home</a></li>
-                <li class="navbar"><a href="randompages/index.html" class="inactive">Random Pages</a></li>
-                <li class="navbar"><a href="music/index.html" class="inactive">Music</a></li>
-		    </ul>
-	    </div>
+    <div class="flexbox">
+        <div class="leftImage">
+            <div class="left" id="left">
+                <div class="tableDiv"> <!-- "tableDiv" in order to centre the text -->
+                    <h1 id="projects">PROJECTS</h1>
+                </div>
+            </div>
+        </div>
         
-        <h1>Hello there!</h1>
-        <p>I'm TheSheepGuy, and welcome to my site, where I put up random pages and perhaps a project or two. It's kinda empty right now, but there's more to come in the future!</p>
-        <h2>Mini-Projects (Random Pages)</h2>
-        <p><a href="randompages/index.html">Here's a list of random mini pages I've made (you can also access them via the navigation bar).</a></p>
+        <div class="rightImage">
+            <div class="right">
+                <div class="tableDiv">
+                    <h1 id="music">MUSIC</h1>
+                </div>
+            </div>
+        </div>
         
-        <h2>Projects</h2>
-        <p>
-            Here's my actual content:
-            <ul>
-                <li><strong>Perfect Pitch Trainer</strong> | A tool to help you improve your perfect pitch. <a href="https://github.com/TheSheepGuy/Perfect-Pitch-Trainer">Github page</a>, <a href="projects/pitchTrainer/index.html">online access</a>.</li>
-            </ul>
-        </p>
-        
-        <!-- sM = Social Media -->
-        <p class="small">Made by TheSheepGuy. Come visit me on <a href="https://twitter.com/thesheepguy1">Twitter</a>, or <a href="https://www.youtube.com/channel/UCTxOOpU2bGdThqPFrsUp7NQ">YouTube</a> <span class="evenSmaller">where I'll upload proper content soon, I promise</span>. Last updated on 15.7.2017</p>
+        <div class="bottomImage">
+            <div class="bottom" id="bottom">
+                <div class="tableDiv">
+                    <h2 id="about">ABOUT ME</h2>
+                    <div class="cellDiv">
+                        <p class="aboutText">I'm TheSheepGuy. On this site, I have my music, and also some projects I've been working on. Thanks for checking it out!</p>
+                        <p class="aboutText">Social Media:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script>
+        $(".cellDiv").hide();
+        
+        $("#projects").on("click", function (event) {
+            window.location.href = "projects/index.html";
+        });
+        
+        $("#music").on("click", function (event) {
+            window.location.href = "music/index.html";
+        });
+        
+        $("#about").on("click", function (event) {
+            //TODO: Write about myself.
+            $("#about").toggle("fast");
+            $(".cellDiv").toggle("fast");
+        });
+        $(".cellDiv").on("click", function (event) {
+            $("#about").toggle("fast");
+            $(".cellDiv").toggle("fast");
+        });
+    </script>
 </body>
 </html>
+
+<!-- Site made by Patrick "TheSheepGuy" Ausel. -->
