@@ -1,128 +1,181 @@
 <html>
 <head>
-    <title>Home - Sheep's Theory Resources</title>
-    <meta name="keywords" content="music, theory, thesheepguy">
-    <meta name="description" content="Music Theory Resource, by TheSheepGuy.">
-    <meta name="author" content='Patrick "TheSheepGuy" Ausel'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+	<title>Intervals - Sheep's Theory Resources</title>
+	<meta name="keywords" content="music, theory, thesheepguy">
+	<meta name="description" content="Music Theory Resource, by TheSheepGuy.">
+	<meta name="author" content='Patrick "TheSheepGuy" Ausel'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="content">
-        <h1>Intervals</h1>
+	<div class="content">
+		<h1>Intervals</h1>
 
-        <h2>Table of Intervals</h2>
+		<h2>Table of Contents</h2>
+		<ul>
+			<li><a href="#workOut">How To Work Out Intervals</a>
+				<ul>
+					<li><a href="#fromInterval">Work Out a Note from an Interval</a></li>
+					<li><a href="#fromNote">Work Out an Interval from a Note</a></li>
+				</ul>
+			</li>
+			<li><a href="#Table of Intervals">Table of Intervals</a></li>
+		</ul>
 
-        <p>To revise your intervals and hear how they sound like, open this table:</p>
+		<hr>
 
-        <p><button id="tableCollapseButton">Hide Table</button></p>
-        
-        <table id="intervalTable">
-            <tr>
-                <th scope="col">Interval Name</th>
-                <th scope="col">Alternate Name</th>
-                <th scope="col">No. of Semitones</th>
-                <th scope="col">Interval From C4</th>
-                <th scope="col">Play Interval</th>
-            </tr>
-            <tr>
-                <td>Perfect Unison</td>
-                <td>Diminished Second</td>
-                <td>0</td>
-                <td><img src="images/intervals/unison.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playUnisonInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Minor Second</td>
-                <td>Augmented Unison</td>
-                <td>1</td>
-                <td><img src="images/intervals/minorSecond.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playMinorSecondInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Major Second</td>
-                <td>Diminished Third</td>
-                <td>2</td>
-                <td><img src="images/intervals/majorSecond.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playMajorSecondInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Minor Third</td>
-                <td>Augmented Second</td>
-                <td>3</td>
-                <td><img src="images/intervals/minorThird.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playMinorThirdInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Major Third</td>
-                <td>Diminished Fourth</td>
-                <td>4</td>
-                <td><img src="images/intervals/majorThird.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playMajorThirdInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Perfect Fourth</td>
-                <td>Augmented Third</td>
-                <td>5</td>
-                <td><img src="images/intervals/perfectFourth.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playPerfectFourthInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Tritone</td>
-                <td>Augmented Fourth / Diminished Fifth</td>
-                <td>6</td>
-                <td><img src="images/intervals/tritone.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playTritoneInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Perfect Fifth</td>
-                <td>Diminished Sixth</td>
-                <td>7</td>
-                <td><img src="images/intervals/perfectFifth.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playPerfectFifthInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Minor Sixth</td>
-                <td>Augmented Fifth</td>
-                <td>8</td>
-                <td><img src="images/intervals/minorSixth.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playMinorSixthInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Major Sixth</td>
-                <td>Diminished Seventh</td>
-                <td>9</td>
-                <td><img src="images/intervals/majorSixth.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playMajorSixthInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Minor Seventh</td>
-                <td>Augmented Sixth</td>
-                <td>10</td>
-                <td><img src="images/intervals/minorSeventh.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playMinorSeventhInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Major Seventh</td>
-                <td>Diminished Octave</td>
-                <td>11</td>
-                <td><img src="images/intervals/majorSeventh.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playMajorSeventhInterval">Play</button></td>
-            </tr>
-            <tr>
-                <td>Perfect Octave</td>
-                <td>Augmented Seventh</td>
-                <td>12</td>
-                <td><img src="images/intervals/octave.png" alt="Sheet music example" class="tableIntervalPic"></td>
-                <td><button class="tableButtons" id="playOctaveInterval">Play</button></td>
-            </tr>
-        </table>
-    </div>
+		<h2 id="workOut">How To Work Out Intervals</h2>
 
-    <h2></h2>
+		<h3 id="fromInterval">Work Out a Note from an Interval</h3>
+		<p><ul>
+			<li>If it's a major or minor interval, and it's not a second, take the scale and look for the scale degree mentioned. For example, a minor 6<sup>th</sup> from F:
+				<ol>
+					<li>It's a major/minor interval, and isn't a second</li>
+					<li>It's a minor interval. So build an F minor scale: F G A♭ B♭ C D♭ E♭ (F).</li>
+					<li>And then look at the 6<sup>th</sup> scale degree. F G A♭ B♭ C D♭, and we've reached the 6th.</li>
+					<li>Therefore, a minor 6<sup>th</sup> up from F is D♭.</li>
+				</ol>
+			</li>
 
-    <script src="Tone.js"></script>
-    <script src="intervals.js"></script>
+			<li>If it's a perfect interval, you can use either scale and look at the degree mentioned. For example, a perfect 4<sup>th</sup> from B♭:
+				<ol>
+					<li>It's a perfect interval, so either scale can be used.</li>
+					<li>Let's go for a major scale. B♭ C D E♭ F G A (B♭)</li>
+					<li>And then look at the 4<sup>th</sup> scale degree. B♭ C D E♭, and we've reached the 4<sup>th</sup>.</li>
+					<li>Therefore, a perfect 4<sup>th</sup> up from B♭ is E♭.</li>
+				</ol>
+			</li>
+
+			<li>If it's a major or minor second, then you need to apply a different method:
+				<ul>
+					<li>If it's a major second, go up a whole step.</li>
+					<li>If it's a minor second, go up a half step.</li>
+				</ul>
+			</li>
+		</ul></p>
+
+		<h3 id="fromNote">Work Out an Interval from a Note</h3>
+		<p>For example, work out the interval between B and A. Here, I start with the major scale, but you can also start with the minor.<ol>
+			<li>Take the original note and build a major scale off of it. So, B C♯ D♯ E F♯ G♯ A♯ (B).</li>
+			<li>Look for the other note and see whether it's in the scale. If it isn't, then use the minor scale. In this case, A isn't there, only A♯. So let's built the minor scale from B: B C♯ D E F♯ G A (B).</li>
+			<li>Now, look at which scale degree it lands on. Here, A is the on the 7<sup>th</sup> position.</li>
+			<li>Then, take the name of the scale and the scale degree, and combine them; in this case it would be a minor 7<sup>th</sup>.</li>
+		</ol></p>
+
+		<hr>
+
+		<h2 id="tableOfIntervals">Table of Intervals</h2>
+
+		<p>To quickly look over the intervals and how they sound like, see this table:</p>
+
+		<p><button id="tableCollapseButton">Hide Table</button></p>
+
+		<table id="intervalTable">
+			<tr>
+				<th scope="col">Interval Name</th>
+				<th scope="col">Alternate Name</th>
+				<th scope="col">No. of Semitones</th>
+				<th scope="col">Interval From C4</th>
+				<th scope="col">Play Interval</th>
+			</tr>
+			<tr>
+				<td>Perfect Unison</td>
+				<td>Diminished Second</td>
+				<td>0</td>
+				<td><img src="images/intervals/unison.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playUnisonInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Minor Second</td>
+				<td>Augmented Unison</td>
+				<td>1</td>
+				<td><img src="images/intervals/minorSecond.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playMinorSecondInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Major Second</td>
+				<td>Diminished Third</td>
+				<td>2</td>
+				<td><img src="images/intervals/majorSecond.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playMajorSecondInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Minor Third</td>
+				<td>Augmented Second</td>
+				<td>3</td>
+				<td><img src="images/intervals/minorThird.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playMinorThirdInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Major Third</td>
+				<td>Diminished Fourth</td>
+				<td>4</td>
+				<td><img src="images/intervals/majorThird.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playMajorThirdInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Perfect Fourth</td>
+				<td>Augmented Third</td>
+				<td>5</td>
+				<td><img src="images/intervals/perfectFourth.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playPerfectFourthInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Tritone</td>
+				<td>Augmented Fourth / Diminished Fifth</td>
+				<td>6</td>
+				<td><img src="images/intervals/tritone.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playTritoneInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Perfect Fifth</td>
+				<td>Diminished Sixth</td>
+				<td>7</td>
+				<td><img src="images/intervals/perfectFifth.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playPerfectFifthInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Minor Sixth</td>
+				<td>Augmented Fifth</td>
+				<td>8</td>
+				<td><img src="images/intervals/minorSixth.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playMinorSixthInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Major Sixth</td>
+				<td>Diminished Seventh</td>
+				<td>9</td>
+				<td><img src="images/intervals/majorSixth.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playMajorSixthInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Minor Seventh</td>
+				<td>Augmented Sixth</td>
+				<td>10</td>
+				<td><img src="images/intervals/minorSeventh.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playMinorSeventhInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Major Seventh</td>
+				<td>Diminished Octave</td>
+				<td>11</td>
+				<td><img src="images/intervals/majorSeventh.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playMajorSeventhInterval">Play</button></td>
+			</tr>
+			<tr>
+				<td>Perfect Octave</td>
+				<td>Augmented Seventh</td>
+				<td>12</td>
+				<td><img src="images/intervals/octave.png" alt="Sheet music example" class="tableIntervalPic"></td>
+				<td><button class="tableButtons" id="playOctaveInterval">Play</button></td>
+			</tr>
+		</table>
+	</div>
+
+	<h2></h2>
+
+	<script src="Tone.js"></script>
+	<script src="intervals.js"></script>
 </body>
 </html>
