@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Intervals - Sheep's Theory Resources</title>
@@ -20,7 +21,8 @@
 					<li><a href="#fromNote">Work Out an Interval from a Note</a></li>
 				</ul>
 			</li>
-			<li><a href="#Table of Intervals">Table of Intervals</a></li>
+			<li><a href="#tableOfIntervals">Table of Intervals</a></li>
+			<li><a href="#practiseHeading">Practise</a></li>
 		</ul>
 
 		<hr>
@@ -53,6 +55,8 @@
 					<li>If it's a minor second, go up a half step.</li>
 				</ul>
 			</li>
+
+			<li>If it's a tritone, then go a perfect 5<sup>th</sup> up and go a semitone down (i.e. go a diminished 5<sup>th</sup> up), or a perfect 4<sup>th</sup> up and a semitone up (i.e. an augmented 4<sup>th</sup>); either one works.</li>
 		</ul></p>
 
 		<h3 id="fromNote">Work Out an Interval from a Note</h3>
@@ -62,6 +66,8 @@
 			<li>Now, look at which scale degree it lands on. Here, A is the on the 7<sup>th</sup> position.</li>
 			<li>Then, take the name of the scale and the scale degree, and combine them; in this case it would be a minor 7<sup>th</sup>.</li>
 		</ol></p>
+
+		<p>The only exception to this is if the note is a tritone. If your note is in between the 4<sup>th</sup> and 5<sup>th</sup>, then it's a tritone. So for example, using the B major scale again, G would be in between G♯ and A♯, so it's a tritone up from B.</p>
 
 		<hr>
 
@@ -171,9 +177,16 @@
 				<td><button class="tableButtons" id="playOctaveInterval">Play</button></td>
 			</tr>
 		</table>
-	</div>
 
-	<h2></h2>
+		<hr>
+	
+		<h2 id="practiseHeading">Practise</h2>
+		<p>Practise your intervals by either listening, or by looking at, a randomly generated interval. Please assume the same interval for enharmonic pitches (i.e. treat F♯ and G♭ the same!). [I'll write a way to select an interval and have it checked whether it's correct soon!]</p>
+
+		<p id="practiseText"><span id="note1Text"></span> <span id="note2Text"></span></p>
+
+		<button id="practiseButton">Generate!</button>
+	</div>
 
 	<script src="Tone.js"></script>
 	<script src="intervals.js"></script>
