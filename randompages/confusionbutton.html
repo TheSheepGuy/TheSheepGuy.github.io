@@ -8,164 +8,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
-        html{
+        html
+        {
             background-color: orange;
         }
-        p{
-            margin-top: 0;
+        *
+        {
             color: black;
-            font-family: "Impact", "Arial", sans-serif;
+            font-family: "Trebuchet MS", "Arial", sans-serif;
             text-align: center;
+        }
+        #output
+        {
+            margin-top: 0;
+            font-family: "Impact", "Arial", sans-serif;
             font-size: 8em;
         }
-        p.credits{
-            font-family: "Trebuchet MS", "Arial", sans-serif;
-            font-size: 0.5em;
+        p.credits
+        {
+            font-size: 1em;
             margin-top: 1em;
         }
-        a{
+        a
+        {
             color: black;
         }
-        h1, h2{
-            color: black;
-            font-family: "Trebuchet MS", "Arial", sans-serif;
-            text-align: center;
-        }
-        h1{font-size: 2.5em;}
-        h2{font-size: 2em;}
-        button{
+        h1{ font-size: 2.5em; }
+        h2{ font-size: 2em; }
+        button
+        {
             display: block;
             margin: 0 auto;
         }
     </style>
     
     <script>
-        function confuse(){
-            var words = ["times",
-                         "people",
-                         "work",
-                         "histories",
-                         "arts",
-                         "loves",
-                         "worlds",
-                         "informations",
-                         "maps",
-                         "twos",
-                         "families",
-                         "governments",
-                         "health",
-                         "systems",
-                         "computers",
-                         "meats",
-                         "years",
-                         "music",
-                         "persons",
-                         "methods",
-                         "data",
-                         "foods",
-                         "understandings",
-                         "theories",
-                         "laws",
-                         "birds",
-                         "literatures",
-                         "problems",
-                         "knowledges",
-                         "powers",
-                         "abilities",
-                         "internets",
-                         "televisions",
-                         "sciences",
-                         "libraries",
-                         "natures",
-                         "ovens",
-                         "gardens",
-                         "videos",
-                         "girlfirends",
-                         "boyfriends",
-                         "cities",
-                         "viruses",
-                         "girls",
-                         "boys",
-                         "films",
-                         "waters",
-                         "money",
-                         "examples",
-                         "businesses",
-                         "studies",
-                         "games",
-                         "lifes",
-                         "days",
-                         "numbers",
-                         "fields",
-                         "fish",
-                         "schools",
-                         "tests",
-                         "trees",
-                         "grass",
-                         "houses",
-                         "classes",
-                         "cash",
-                         "mice",
-                         "taxes",
-                         "gifts",
-                         "gases",
-                         "feet",
-                         "meats",
-                         "salamies",
-                         "hams",
-                         "jams",
-                         "cheeses",
-                         "butters",
-                         "colas",
-                         "drinks",
-                         "edges",
-                         "sparkling waters",
-                         "windows",
-                         "glasses",
-                         "cars",
-                         "hotels",
-                         "soups",
-                         "pizzas",
-                         "burgers",
-                         "pans",
-                         "stoves",
-                         "screens",
-                         "Trumps",
-                         "sweetes",
-                         "wars",
-                         "jobs",
-                         "weathers",
-                         "plants",
-                         "stars",
-                         "space",
-                         "animals",
-                         "tents",
-                         "messages",
-                         "wheels",
-                         "lorries",
-                         "instruments",
-                         "lights",
-                         "lanterns",
-                         "cupboars",
-                         "blinds",
-                         "creams",
-                         "chairs",
-                         "lamps",
-                         "haircuts",
-                         "waves",
-                         "roofs",
-                         "dogs",
-                         "wolves",
-                         "cats"
-                        ];
+    let words = ["times",
+                "people",
+                "work",
+                "histories",
+                "arts",
+                "loves",
+                "worlds",
+                "informations",
+                "maps",
+                "twos",
+                "families",
+                "governments",
+                "health",
+                "systems",
+                "computers",
+                "meats",
+                "years",
+                "music",
+                "persons",
+                "methods",
+                "data",
+                "foods",
+                "understandings",
+                "theories",
+                "laws",
+                "birds",
+                "literatures",
+                "problems",
+                "knowledges",
+                "powers",
+                "abilities",
+                "internets",
+                "televisions",
+                "sciences",
+                "libraries",
+                "natures",
+                "ovens",
+                "gardens",
+                "videos",
+                "girlfriends",
+                "boyfriends",
+                "cities",
+                "viruses",
+                "girls",
+                "boys",
+                "films",
+                "waters",
+                "money",
+                "examples",
+                "businesses",
+                "studies",
+                "games",
+                "lifes",
+                "days",
+                "numbers",
+                "fields",
+                "fish",
+                "schools",
+                "tests",
+                "trees",
+                "grass",
+                "houses",
+                "classes",
+                "cash",
+                "mice",
+                "taxes",
+                "gifts",
+                "gases",
+                "feet",
+                "meats",
+                "salamies",
+                "hams",
+                "jams",
+                "cheeses",
+                "butters",
+                "colas",
+                "drinks",
+                "edges",
+                "sparkling waters",
+                "windows",
+                "glasses",
+                "cars",
+                "hotels",
+                "soups",
+                "pizzas",
+                "burgers",
+                "pans",
+                "stoves",
+                "screens",
+                "Trumps",
+                "sweetes",
+                "wars",
+                "jobs",
+                "weathers",
+                "plants",
+                "stars",
+                "space",
+                "animals",
+                "tents",
+                "messages",
+                "wheels",
+                "lorries",
+                "instruments",
+                "lights",
+                "lanterns",
+                "cupboars",
+                "blinds",
+                "creams",
+                "chairs",
+                "lamps",
+                "haircuts",
+                "waves",
+                "roofs",
+                "dogs",
+                "wolves",
+                "cats"
+                    ];
+        function confuse()
+        {
+            
             
             //Chose a word from the list above
-            var randomNo1 = Math.floor(Math.random() * 100); 
-            var randomNo2 = Math.floor(Math.random() * 100);
+            let randomNo1 = Math.floor(Math.random() * words.length);
+            let randomNo2 = Math.floor(Math.random() * words.length);
             
             //Turn that number to the actual word as a string
-            var word1 = words[randomNo1];
-            var word2 = words[randomNo2];
+            let word1 = words[randomNo1];
+            let word2 = words[randomNo2];
             
             //Output the two random words along with the other text
             output = document.getElementById("output");
