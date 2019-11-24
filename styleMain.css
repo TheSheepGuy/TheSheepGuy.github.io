@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=latin-ext');
+
 *{
     color: #ddd;
-    font-family: "Trebuchet MS", sans-serif;
+    font-family: "PT Sans", "Trebuchet MS", sans-serif;
 }
 html, body{
     margin: 0;
-    padding 0;
+    padding: 0;
     background-color: #000;
 }
 h1{
@@ -20,13 +22,17 @@ p{
     text-align: justify;
 }
 a:hover{
-    color: #e67300;
+    color: #7e5bff;
 }
-div.content{
+body{
     width: 80%;
-    margin: 0 auto;
-    background-color: #333333;
+    margin: 0.5% auto;
+    background-color: #222222;
     border: 5px solid #4323c3;
+}
+#content
+{
+    padding: 0 0.5%;
 }
 .evensmaller{
     font-size: 0.5em;
@@ -60,8 +66,8 @@ li.navbar a{
     text-decoration: none;
 }
 li.navbar a:hover:not(.active){
-    background-color: #884500;
+    background-color: #33137e;
 }
 a.active {
-    background-color: #e67300;
+    background-color: #4323c3;
 }
