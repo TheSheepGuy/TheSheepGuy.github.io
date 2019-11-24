@@ -71,3 +71,29 @@ li.navbar a:hover:not(.active){
 a.active {
     background-color: #4323c3;
 }
+
+/* Social Media */
+#social_media
+{
+    text-align: center;
+}
+#social_media p
+{
+    text-align: center;
+}
+#social_media_images_container img
+{
+    padding: 0 0.25em;
+}
+.social_media_images
+{
+    height: 40px;
+}
+.social_media_imagesHOME
+{
+    height: 60px;
+}
+#social_media_images_container
+{
+    margin: 0 auto;
+}
